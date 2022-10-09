@@ -1,0 +1,15 @@
+{
+    "name": "Membership EXPIRED",
+    "description": "This NFT allows you to acess the platform",
+    "image": "https://gateway.pinata.cloud/ipfs/QmbhzSHQ51NqpjKsGiVdfguHuNFQkK4oUfMdQ8yzM5fuWn",
+    "attributes": [
+        {
+            "trait-type": "PassMonth",
+            "value": "PASS"
+        },
+        {
+            "trait-type": "PassedMonth",
+            "value": "EXPIRED"
+        }
+    ]
+}

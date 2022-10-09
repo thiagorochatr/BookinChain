@@ -1,0 +1,4 @@
+Token Name: Bookin
+Token Symbol: BIN
+Token Decimals: 18
+Token Address: 0xa4972E5604b1ADB05E424462741Cd471a160EA8b (Polygon)
