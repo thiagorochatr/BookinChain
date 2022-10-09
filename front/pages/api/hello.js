@@ -1,33 +1,14 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// import type { NextApiRequest, NextApiResponse } from 'next'
-
-// type Data = {
-//   name: string,
-//   image: string,
-//   description: string,
-//   archive: string,
-//   author: string,
-//   attributes: [
-//     {
-//       reward: number,
-//       price: string
-//     }
-//   ]
-// }
-
 export default function handler(
-    // req: NextApiRequest,
-    // res: NextApiResponse<Data>
     req,
     res
   ) {
     res.status(200).json({
-      name: 'name',
-      image: "https://www.computerhope.com/jargon/b/black.jpg",
-      description: 'description',
-      archive: 'archive',
-      author: 'author',
-      reward: 1,
+      name: 'Don Quijote',
+      image: "https://gateway.pinata.cloud/ipfs/QmRkXdHgfiG2EXroymqM2w3CScdAxkCZVdo9As661zvXHr",
+      description: 'This NFT is the book of Dom Quijote',
+      archive: 'https://gateway.pinata.cloud/ipfs/QmNWzCBdFRjxKUS5P2BnC3YHZ6zXm1cPZw8gJnVetp68YW',
+      author: 'john.eth',
+      reward: 7.7,
       price: "Free"
     })
   }
