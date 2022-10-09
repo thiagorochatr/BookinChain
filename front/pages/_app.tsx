@@ -14,7 +14,7 @@ const config: ConfigOptions = {
   accentColor: 'default',
   ethereum: {
     appName: 'web3Modal',
-    autoConnect: true,
+    autoConnect: false,
     chains: [
       chains.polygon
     ],
