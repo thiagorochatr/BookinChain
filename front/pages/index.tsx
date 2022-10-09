@@ -9,46 +9,16 @@ import Marketplace from '../sections/Marketplace'
 import Book from '../sections/Book'
 import { useEffect } from 'react'
 
+
+
 const Home: NextPage = () => {
   const { isOpen, open, close } = useConnectModal()
   const { address, connector, isConnected } = useAccount()
 
-  // const link = (conf: number) => {
-
-  //   if(confirmation==conf){
-
-  //     if(conf==2){
-
-  //     }
-
-  //     if(conf==3){
-        
-  //     }
-  //   }
-  // }
-
-  // const verifyTransaction = async() => {
-
-  //   const 
-  //   confirmation != 0 ? true : false;
-
-  //   if(confirmation>0){
-  //     return (
-  //       <span>Ola!</span>
-  //     )
-  //   }
-  // }
-
-  const smallAddress = address.slice(36);
-
-  // useEffect(() => {
-  //  verifyTransaction();
-  // }, []);
-
   return isConnected ? (
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
         <Head>
-          <title>Create Next App</title>
+          <title>Create Next App 1</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -68,7 +38,7 @@ const Home: NextPage = () => {
         </header>
 
         <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-          <Marketplace />
+            <Marketplace />
         </main>
 
         <footer className="flex h-24 w-full items-center justify-center border-t">
@@ -116,6 +86,7 @@ const Home: NextPage = () => {
   </div>
 
   )
+
 }
 
 export default Home

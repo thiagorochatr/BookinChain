@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { safeMint2, transfer } from '../pages/api/index';
 import { ConnectButton, useConnectModal, useAccount } from '@web3modal/react'
+import Book from './Book'
 
 export default function UseAccount() {
 
@@ -17,8 +18,12 @@ export default function UseAccount() {
     fetch("/api/hello")
     .then(response => response.json())
     .then(object => setObject(object))
-
   }, []);
+
+  async function mintNFT() {
+    await safeMint2(address);
+
+  }
 
   return (
       <div className='border w-64 rounded-xl pb-2'>
@@ -38,13 +43,14 @@ export default function UseAccount() {
                 Reward: $BIN {reward}
               </p>
             </div>
-            <button onClick={() => safeMint2(address)}>
-              <p className='bg-purple-500 py-1 px-2 rounded-md'>
-                {price}
-              </p>
-            </button>
+              <button onClick={() => mintNFT()}>
+                <p className='bg-purple-500 py-1 px-2 rounded-md'>
+                  {price}
+                </p>
+              </button>
           </div>
         </div>
       </div>
   )
 }
+

@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sections/Marketplace.jsx", "pages/api/hello.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sections/Marketplace.jsx", "pages/api/hello.js", "pages/books.jsx"],
   "exclude": ["node_modules"]
 }
